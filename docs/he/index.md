@@ -13,7 +13,7 @@
 <a href="../downloads/" class="download-btn pdf">📄 PDF מלא</a>
 <a href="../downloads/" class="download-btn epub">📱 EPUB</a>
 <a href="../downloads/" class="download-btn print">🖨️ להדפסה</a>
-<a href="https://cf-cdn.danielrosehill.com/audio/audiobooks/Israel-Wartime-Readiness-Field-Guide-Audiobook.m4a" class="download-btn epub">🎧 ספר שמע</a>
+<a href="https://episodes.myweirdprompts.com/audio/israel-wartime-readiness-field-guide-audiobook.m4a" class="download-btn epub">🎧 ספר שמע</a>
 </div>
 
 ## פרקים

@@ -13,7 +13,7 @@ Um guia abrangente de preparacao civil para tempo de guerra em Israel, baseado n
 <a href="../downloads/" class="download-btn pdf">📄 PDF Completo</a>
 <a href="../downloads/" class="download-btn epub">📱 EPUB</a>
 <a href="../downloads/" class="download-btn print">🖨️ Imprimiveis</a>
-<a href="https://cf-cdn.danielrosehill.com/audio/audiobooks/Israel-Wartime-Readiness-Field-Guide-Audiobook.m4a" class="download-btn epub">🎧 Audiolivro</a>
+<a href="https://episodes.myweirdprompts.com/audio/israel-wartime-readiness-field-guide-audiobook.m4a" class="download-btn epub">🎧 Audiolivro</a>
 </div>
 
 ## Capitulos

@@ -8,7 +8,7 @@
 |--------|------|
 | **PDF מלא** | [Israel-Wartime-Readiness-Field-Guide-v4.pdf](https://github.com/danielrosehill/Israel-Civilian-Readiness-Guide/releases/download/v4.1/Israel-Wartime-Readiness-Field-Guide-v4.pdf) |
 | **EPUB** | [Israel-Wartime-Readiness-Field-Guide-v4.epub](https://github.com/danielrosehill/Israel-Civilian-Readiness-Guide/releases/download/v4.1/Israel-Wartime-Readiness-Field-Guide-v4.epub) |
-| **ספר שמע (M4A)** | [Israel-Wartime-Readiness-Field-Guide-Audiobook.m4a](https://cf-cdn.danielrosehill.com/audio/audiobooks/Israel-Wartime-Readiness-Field-Guide-Audiobook.m4a) |
+| **ספר שמע (M4A)** | [Israel-Wartime-Readiness-Field-Guide-Audiobook.m4a](https://episodes.myweirdprompts.com/audio/israel-wartime-readiness-field-guide-audiobook.m4a) |
 
 ## רשימות ביקורת להדפסה
 
