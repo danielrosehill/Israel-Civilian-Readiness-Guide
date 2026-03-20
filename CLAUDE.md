@@ -17,14 +17,13 @@ A comprehensive civilian preparedness field guide for wartime in Israel, based o
 ## Directory Structure
 
 ```
-iterations/edits/v2/    — Current content source (markdown)
+docs/                   — Website source (MkDocs, 7 languages)
 typst/                  — Typst source files (guide.typ + modules)
-output/                 — Compiled PDF output
+output/                 — Compiled PDF output + printable checklists
 images/avatars/         — Herman and Corn mascot images
 images/other/           — beyahad.png banner
 assets/generated/       — AI-generated graphics
-planning/               — Design briefs and toolchain notes
-original/               — V1 original draft
+archive/                — Historical drafts, planning docs, review notes
 ```
 
 ## Build Commands
@@ -59,7 +58,7 @@ xdg-open output/Israel-Wartime-Readiness-Field-Guide-v3.pdf
 
 ## Content Source
 
-All guide content lives in `iterations/edits/v2/Israel Wartime Readiness Checklist.md`. Content edits go there first, then the Typst source is updated to match.
+Website content lives in `docs/en/`. The Typst PDF source is `typst/guide.typ`.
 
 ## HFC Guidelines (Ground Truth)
 
