@@ -870,13 +870,22 @@ _Run immediately after the all-clear. Restore full readiness before the next ale
 #v(0.3cm)
 
 #calm-box[
-  *Self-Care — Do these NOW, not later.* You don't know when the next alert comes. \
+  *Self-Care — Do these NOW, not later.* You don't know when the next alert comes.
   #set text(size: 9.5pt)
-  #ci[DRINK WATER] #h(6pt) #ci[EAT] #h(6pt) #ci[USE THE TOILET]
-  #linebreak()
-  #ci(d: "If time and situation allow")[SHOWER] #h(6pt) #ci(d: "When possible")[REST]
   #v(6pt)
-  *Children:* #ci[FED] #h(4pt) #ci[WATERED] #h(4pt) #ci[TOILETED / CHANGED]
+  #ci(d: "Stress suppresses appetite — eat anyway. You need the energy.")[EAT FOOD]
+  #linebreak()
+  #ci[DRINK WATER]
+  #linebreak()
+  #ci[USE THE TOILET]
+  #linebreak()
+  #ci(d: "If time and situation allow")[SHOWER]
+  #linebreak()
+  #ci(d: "When possible")[REST]
+  #v(8pt)
+  *Children:*
+  #linebreak()
+  #ci[FED] #h(6pt) #ci[WATERED] #h(6pt) #ci[TOILETED / CHANGED]
   #linebreak()
   #ci(d: "If possible")[CLEANED] #h(6pt) #ci(d: "Put down for nap if timing allows")[RESTED]
 ]
