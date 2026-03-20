@@ -1,0 +1,11 @@
+{
+  "mcpServers": {
+    "fal-mcp": {
+      "command": "npx",
+      "args": ["-y", "fal-mcp"],
+      "env": {
+        "FAL_KEY": "${FAL_KEY}"
+      }
+    }
+  }
+}

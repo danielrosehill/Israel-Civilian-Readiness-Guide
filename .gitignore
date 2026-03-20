@@ -1,0 +1,12 @@
+# Environment files
+.env
+.env.*
+
+# Editor
+.vscode/
+*.swp
+*~
+
+# OS
+.DS_Store
+Thumbs.db

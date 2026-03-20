@@ -161,7 +161,7 @@
 | **Wallet** | | |
 | **Meds** | ☐ **TAKEN** on schedule | |
 | **Rest** | ☐ **TAKEN** when possible | |
-| **Hygiene** | ☐ **TENDED TO** as soon as possible | |
+| **Hygiene** | ☐ **SHOWER** \- as soon as possible ☐ **BRUSH TEETH** ☐ **TENDED TO** generally | |
 | **Toilet Visits** | ☐ **TAKEN** as soon as possible | |
 
 ### 3.7 Situational Awareness
