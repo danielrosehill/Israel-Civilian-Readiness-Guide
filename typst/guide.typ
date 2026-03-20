@@ -466,6 +466,7 @@
     #set text(size: 9.5pt)
     + *Feet on floor → into shoes* (same spot every night)
     + *Grab glasses + phone* from nightstand
+    + *Caffeine pill _(optional)_* — sip of water, if you keep them bedside
     + *Pull on clothes* laid out by bed
     + *Torch* if power is out
     + *Move to protected space* or front door
@@ -782,7 +783,9 @@ _See Chapter 5 §5.1 and Appendix G for detailed go bag guidance._
    #linebreak()
    #ci[FIRST AID KIT — PACKED AND SUPPLIED]
    #linebreak()
-   #ci[TRAVEL ROUTER — PACKED]],
+   #ci[TRAVEL ROUTER — PACKED]
+   #linebreak()
+   #ci(d: "Optional — for rapid alertness during night alarms. Skip if caffeine-sensitive.")[CAFFEINE PILLS — PACKED]],
 
   [*Overnight Stays*],
   [#ci(d: "Siddur, Tefilin")[RELIGIOUS EFFECTS — PACKED]
@@ -985,6 +988,8 @@ _Run immediately after the all-clear. Restore full readiness before the next ale
   #linebreak()
   #ci(d: "If time and situation allow")[SHOWER]
   #linebreak()
+  #ci(d: "Morale and normalcy matter")[SHAVE / GROOMING]
+  #linebreak()
   #ci(d: "When possible")[REST]
   #v(8pt)
   *Children:*
@@ -1034,6 +1039,7 @@ _Run immediately after the all-clear. Restore full readiness before the next ale
   icon-shoe, [*Footwear* #critical], [#ci(d: "Ready to step into immediately")[CLOSED-TOE SHOES BY BED]],
   [], [*Torch*], [#ci(d: "On nightstand, not buried in go bag")[WITHIN ARM'S REACH]],
   [], [*Glasses*], [#ci(d: "Same spot every night")[BY BED]],
+  [], [*Caffeine Pill _(optional)_*], [#ci(d: "You may wish to take one on waking to a siren to speed alertness. Not suitable for those with heart conditions, anxiety disorders, or caffeine sensitivity. Consult your doctor.")[BY BED WITH WATER]],
   icon-key, [*Keys*], [#ci(d: "By bed or on hook by front door")[ACCESSIBLE]],
   icon-bag, [*Go Bag* #critical], [#ci[BY DOOR] #h(4pt) #ci[CONTENTS VERIFIED] #linebreak() #ci[POWER BANK ON CHARGE]],
   icon-door, [*Exit Route* #critical], [#ci(d: "Can navigate in the dark")[HALLWAY CLEAR] #linebreak() #ci[FRONT DOOR NOT DOUBLE-LOCKED]],
@@ -1221,6 +1227,7 @@ This is one of the hardest scenarios. Everything in §4.4 exists to make this mo
   + *Siren or phone alert wakes you.* Do not process. Just move
   + *Feet on floor → into shoes.* Same spot every night
   + *Grab glasses* and *phone*
+  + *Caffeine pill _(optional)_* — you may wish to take one with a sip of water to speed alertness. Not for everyone — skip if caffeine-sensitive or medically contraindicated
 
   === The next 10–20 seconds
   4. *Clothes:* Pull on whatever is laid out. Speed over appearance
@@ -1300,7 +1307,65 @@ This is one of the hardest scenarios. Everything in §4.4 exists to make this mo
 
 *Give yourself permission to function imperfectly.* Safety first, then wellbeing, then everything else.
 
-== 5.8 Caring for Elderly Neighbours & Vulnerable People
+== 5.8 During Lulls — Resupply & Maintenance
+
+_When there's a pause in alerts — hours or days — use the window wisely. These lulls don't last._
+
+#v(0.2cm)
+
+#warning-box[*Stay alert even during quiet periods.* Keep your phone on, HFC app running, and shoes accessible. Lulls can end without warning.]
+
+#v(0.2cm)
+
+=== #icon-bag Resupply (with caution)
+
+#table(
+  columns: (auto, 1fr, 1.5fr),
+  inset: 9pt,
+  stroke: 0.5pt + grey-border,
+  fill: (_, y) => if y == 0 { blue-dark } else if calc.odd(y) { grey-light } else { white },
+  align: (center, left, left),
+  [],
+  text(fill: white, weight: "bold", size: 9pt)[TASK],
+  text(fill: white, weight: "bold", size: 9pt)[NOTES],
+
+  icon-water, [*Stock up on water*], [Top up to 72-hour supply per person (9L each)],
+  icon-food, [*Restock pantry*], [Canned goods, shelf-stable foods — see Appendix I],
+  icon-medkit, [*Fill prescriptions*], [If pharmacies are open — don't wait for the last pill],
+  icon-phone, [*Charge everything*], [All phones, power banks, laptops, torches, radios],
+  icon-bag, [*Repack go bag*], [Replace anything used; check expiry dates],
+  icon-car, [*Fill car fuel*], [At least half a tank; queues may be long],
+  [], [*Cash withdrawal*], [ATMs may go offline; keep small bills on hand],
+  [], [*Laundry*], [Clean clothes ready for the next round],
+)
+
+#v(0.2cm)
+
+=== #icon-house Home & Safety
+
+- *Check mamad/shelter* — anything displaced by shaking? Door still seals?
+- *Secure loose items* — objects may have shifted from impacts
+- *Test smoke detector and fire extinguisher* — infrastructure damage increases fire risk
+- *Check gas lines* — if you smell gas, shut off and call *102*
+
+=== #icon-people Personal & Family
+
+- *Contact family and friends* — confirm everyone is safe; update plans
+- *Fill prescriptions and medical supplies* — pharmacies may have limited hours
+- *Shave, shower, do laundry* — morale and normalcy matter
+- *Sleep* — real sleep, not a nap. Set an alarm if you're anxious about missing an alert
+- *Play with children* — normality is the best antidote to anxiety
+- *Walk outside briefly* — sunlight and fresh air if the area is safe
+
+#v(0.2cm)
+
+#tip-box()[
+  #set text(size: 9pt)
+  *Prioritise ruthlessly.* Water and medications first. Then power. Then food. Then everything else. Don't try to do it all — the lull may be short.
+]
+
+#pagebreak()
+== 5.9 Caring for Elderly Neighbours & Vulnerable People
 
 === Before the escalation
 - *Know your neighbours* — especially those living alone or with limitations
@@ -1320,7 +1385,7 @@ This is one of the hardest scenarios. Everything in §4.4 exists to make this mo
 - If distressed: *118* (Welfare Ministry) or *\*8840* (Senior Citizens)
 
 #pagebreak()
-== 5.9 Using Communal / Public Shelters #h(6pt) #icon-shield
+== 5.10 Using Communal / Public Shelters #h(6pt) #icon-shield
 
 #warning-box[
   HFC maintains official shelter information. Check the HFC app or oref.org.il. This guidance supplements — does not replace — official instructions.
@@ -1340,7 +1405,7 @@ This is one of the hardest scenarios. Everything in §4.4 exists to make this mo
 - *Pets:* many shelters do not allow animals — check in advance
 - Bring something for children to do
 
-== 5.10 OPSEC & Information Discipline
+== 5.11 OPSEC & Information Discipline
 
 #warning-box[During wartime, what you share online can endanger lives — including your own.]
 
@@ -1379,7 +1444,7 @@ This is one of the hardest scenarios. Everything in §4.4 exists to make this mo
 ]
 
 #pagebreak()
-== 5.11 Preliminary Guidelines (Advance Warning) #h(6pt) #icon-alert
+== 5.12 Preliminary Guidelines (Advance Warning) #h(6pt) #icon-alert
 
 HFC provides *3–5 minute advance warning* for attacks from distant sources (e.g. Yemen).
 
@@ -1395,7 +1460,7 @@ HFC provides *3–5 minute advance warning* for attacks from distant sources (e.
 
 *When the actual alert sounds:* follow standard shelter procedure (Appendix D).
 
-== 5.12 Terrorist Infiltration / Hostile Aerial Vehicle
+== 5.13 Terrorist Infiltration / Hostile Aerial Vehicle
 
 #warning-box[*Different protocol* from rocket/missile response. Do NOT follow standard shelter procedure.]
 
@@ -2060,6 +2125,416 @@ _All sources from the Israel Home Front Command (Pikud HaOref) English-language 
   #text(size: 9pt, style: "italic")[
     Source HTML files are preserved in the `sources/hfc-official/` directory of this repository for transparency and verification. Always consult oref.org.il for the most current guidance.
   ]
+]
+
+// ══════════════════════════════════════════════
+// PRINTABLES — Single-page tear-out checklists
+// ══════════════════════════════════════════════
+#set-section("Printables", colour: rgb("#2c3e50"))
+
+// Printable intro page
+#page(header: none, footer: none)[
+  #v(2cm)
+  #align(center)[
+    #text(size: 24pt, weight: "bold", fill: blue-dark)[PRINTABLES]
+    #v(0.3cm)
+    #text(size: 12pt, fill: grey-text)[Single-page checklists — tear out, photocopy, or print individually.]
+    #v(0.5cm)
+    #block(width: 60%, height: 2pt, fill: blue-accent, radius: 1pt)
+    #v(1cm)
+  ]
+
+  #block(
+    width: 100%,
+    inset: 14pt,
+    fill: blue-light,
+    radius: 8pt,
+    stroke: 1pt + blue-accent,
+  )[
+    #text(size: 10pt)[
+      The following pages are *standalone single-page checklists* designed to be used independently of the full guide. Each fits on one sheet of A4.
+
+      #v(6pt)
+      *Suggested placement:*
+      #v(4pt)
+      - *PAWS BED* — on the fridge or front door (daily check)
+      - *Daytime Posture* — on the fridge or home office
+      - *Before Bed* — taped to bedroom door or nightstand
+      - *After Shelter Reset* — in the mamad
+      - *Before Showering* — on the bathroom mirror
+      - *Before Leaving Home* — by the front door
+      - *Night Alarm Drill* — taped to the wall by your bed
+      - *Emergency Numbers* — fridge, mamad, and go bag (3 copies)
+      - *Shabbat/Hag Prep* — in the kitchen
+
+      #v(6pt)
+      These printables are also available as individual PDFs in the `output/printables/` directory.
+    ]
+  ]
+]
+
+// --- Printable 1: PAWS BED ---
+#page(margin: (top: 1.5cm, bottom: 1.5cm, left: 1.5cm, right: 1.5cm), header: none, footer: none)[
+  #block(
+    width: 100%,
+    inset: (x: 14pt, y: 10pt),
+    fill: rgb("#0e7c47"),
+    radius: 4pt,
+  )[#text(size: 14pt, weight: "bold", fill: white)[PAWS BED — Quick Smoke Test]]
+  #v(0.2cm)
+  #text(size: 9pt, style: "italic")[Daily during wartime · Weekly during elevated tension · Under 2 minutes.]
+  #v(0.3cm)
+  #block(width: 100%, radius: 6pt, clip: true, stroke: 1.5pt + blue-accent)[
+    #table(
+      columns: (auto, auto, 1fr),
+      inset: 10pt,
+      stroke: 0.5pt + grey-border,
+      fill: (_, y) => if y == 0 { blue-dark } else if calc.odd(y) { blue-light } else { white },
+      align: (center, left, left),
+      text(fill: white, weight: "bold")[LETTER], text(fill: white, weight: "bold")[CHECK], text(fill: white, weight: "bold")[VERIFY],
+      text(size: 20pt, weight: "bold", fill: blue-dark)[P], [#icon-phone *Phone*], [#ci[ON · CHARGED · HFC APP RUNNING · CORRECT AREA]],
+      text(size: 20pt, weight: "bold", fill: blue-dark)[A], [#icon-alert *Alerts*], [#ci[WIRELESS ALERTS ENABLED · DND OVERRIDE VERIFIED]],
+      text(size: 20pt, weight: "bold", fill: blue-dark)[W], [#icon-water *Water*], [#ci[72-HOUR SUPPLY ACCESSIBLE · NOT EXPIRED]],
+      text(size: 20pt, weight: "bold", fill: blue-dark)[S], [#icon-shield *Shelter*], [#ci[NEAREST 3 SHELTERS KNOWN · ROUTES WALKABLE]],
+      text(size: 20pt, weight: "bold", fill: blue-dark)[B], [#icon-bag *Bag*], [#ci[BY DOOR · ZIPPED · CONTENTS VERIFIED]],
+      text(size: 20pt, weight: "bold", fill: blue-dark)[E], [#icon-door *Exit*], [#ci[HALLWAY CLEAR · DOOR UNLOCKABLE QUICKLY]],
+      text(size: 20pt, weight: "bold", fill: blue-dark)[D], [#icon-people *Dependents*], [#ci[ALL HOUSEHOLD MEMBERS PRESENT OR ACCOUNTED FOR]],
+    )
+  ]
+  #v(0.4cm)
+  #block(width: 100%, inset: 14pt, fill: blue-light, radius: 8pt, stroke: 1.5pt + blue-accent)[
+    #align(center)[
+      #text(size: 18pt, weight: "bold", fill: blue-dark)[Mnemonic: PAWS BED]
+      #v(4pt)
+      #text(size: 13pt, fill: grey-text, style: "italic")["Check your PAWS before BED"]
+    ]
+  ]
+  #v(0.3cm)
+  #block(width: 100%, inset: 10pt, fill: grey-light, radius: 4pt)[
+    #text(size: 9pt)[*Date:* #h(3cm) #box(width: 4cm, stroke: (bottom: 0.5pt + grey-text))[] #h(1cm) *Completed by:* #h(0.5cm) #box(width: 4cm, stroke: (bottom: 0.5pt + grey-text))[]]
+  ]
+  #v(1fr)
+  #line(length: 100%, stroke: 0.5pt + grey-border)
+  #v(3pt)
+  #text(size: 7pt, fill: grey-text)[Israel Wartime Readiness Field Guide · V4 · danielrosehill.com #h(1fr) Print and post visibly.]
+]
+
+// --- Printable 2: Daytime Posture ---
+#page(margin: (top: 1.5cm, bottom: 1.5cm, left: 1.5cm, right: 1.5cm), header: none, footer: none)[
+  #block(width: 100%, inset: (x: 14pt, y: 10pt), fill: rgb("#d35400"), radius: 4pt)[#text(size: 14pt, weight: "bold", fill: white)[#icon-sun Daytime At-Home Posture]]
+  #v(0.2cm)
+  #text(size: 9pt, style: "italic")[Run after waking and repeat after any disruption.]
+  #v(0.3cm)
+  #table(
+    columns: (auto, 1fr, 2fr), inset: 10pt, stroke: 0.5pt + grey-border,
+    fill: (_, y) => if y == 0 { blue-dark } else if calc.odd(y) { grey-light } else { white },
+    align: (center, left, left),
+    [], text(fill: white, weight: "bold", size: 9pt)[ITEM], text(fill: white, weight: "bold", size: 9pt)[CHECK],
+    icon-phone, [*Phone* #critical], [#ci(d: "Or within arm's reach")[ON PERSON] #linebreak() #ci[CHARGED OR CHARGING] #linebreak() #ci[HFC APP RUNNING]],
+    icon-shirt, [*Dressed* #critical], [#ci[FULLY CLOTHED] #linebreak() #ci(d: "Not slippers, not barefoot")[CLOSED-TOE SHOES ON]],
+    icon-key, [*Keys* #critical], [#ci[ON PERSON OR IN/BY DOOR]],
+    icon-bag, [*Go Bag* #critical], [#ci[BY DOOR] #h(6pt) #ci[ZIPPED]],
+    icon-door, [*Exit Route* #critical], [#ci[HALLWAY CLEAR] #linebreak() #ci[FRONT DOOR CAN BE OPENED QUICKLY]],
+    icon-laptop, [*Browser Alert*], [#ci(d: "If working at desk")[RED ALERT EXTENSION ACTIVE]],
+  )
+  #v(0.3cm)
+  #block(width: 100%, inset: 12pt, fill: blue-light, radius: 6pt, stroke: 1pt + blue-accent)[
+    #text(size: 10pt, weight: "bold", fill: blue-dark)[Working from home during wartime:]
+    #v(4pt)
+    #set text(size: 9pt)
+    - Stay dressed and shoed — do not slip into pyjamas
+    - Headphones: one ear only, or volume low enough to hear a siren
+    - Save work frequently — you may need to abandon your desk
+    - Start calls with: _"I'm in an active alert zone. I may need to leave abruptly."_
+  ]
+  #v(0.2cm)
+  #block(width: 100%, inset: 10pt, fill: grey-light, radius: 4pt)[
+    #text(size: 9pt)[*Date:* #h(3cm) #box(width: 4cm, stroke: (bottom: 0.5pt + grey-text))[] #h(1cm) *Completed by:* #h(0.5cm) #box(width: 4cm, stroke: (bottom: 0.5pt + grey-text))[]]
+  ]
+  #v(1fr)
+  #line(length: 100%, stroke: 0.5pt + grey-border)
+  #v(3pt)
+  #text(size: 7pt, fill: grey-text)[Israel Wartime Readiness Field Guide · V4 · danielrosehill.com #h(1fr) Print and post visibly.]
+]
+
+// --- Printable 3: Before Bed ---
+#page(margin: (top: 1.5cm, bottom: 1.5cm, left: 1.5cm, right: 1.5cm), header: none, footer: none)[
+  #block(width: 100%, inset: (x: 14pt, y: 10pt), fill: blue-dark, radius: 4pt)[#text(size: 14pt, weight: "bold", fill: white)[#icon-moon Before Bed Checklist]]
+  #v(0.2cm)
+  #text(size: 9pt, style: "italic")[Run every night. Everything here makes a 3am siren survivable on autopilot.]
+  #v(0.2cm)
+  #table(
+    columns: (auto, 1fr, 2fr), inset: 8pt, stroke: 0.5pt + grey-border,
+    fill: (_, y) => if y == 0 { blue-dark } else if calc.odd(y) { grey-light } else { white },
+    align: (center, left, left),
+    [], text(fill: white, weight: "bold", size: 9pt)[ITEM], text(fill: white, weight: "bold", size: 9pt)[CHECK],
+    icon-eye, [*News Check*], [#ci(d: "Safe to sleep at home?")[SITUATION SCANNED]],
+    icon-phone, [*Phone* #critical], [#ci[CHARGING] #ci[NOT AIRPLANE MODE] #linebreak() #ci[LOCATION ON] #ci[HFC APP — OVERRIDE PERMS]],
+    icon-shirt, [*Clothes* #critical], [#ci(d: "Full outfit in seconds")[LAID OUT BY BED]],
+    icon-shoe, [*Shoes* #critical], [#ci[CLOSED-TOE BY BED]],
+    [], [*Torch*], [#ci[ON NIGHTSTAND]],
+    [], [*Glasses*], [#ci[BY BED]],
+    [], [*Caffeine _(opt)_*], [#ci[BY BED WITH WATER]],
+    icon-key, [*Keys*], [#ci[BY BED OR BY DOOR]],
+    icon-bag, [*Go Bag* #critical], [#ci[BY DOOR] #ci[POWER BANK CHARGING]],
+    icon-door, [*Exit* #critical], [#ci[HALLWAY CLEAR] #ci[NOT DOUBLE-LOCKED]],
+    icon-alert, [*Hearing* #critical], [#ci[NO EARPLUGS]],
+    icon-baby, [*Dependents* #critical], [#ci[ALL ACCOUNTED FOR]],
+  )
+  #v(0.1cm)
+  #block(width: 100%, inset: 10pt, fill: grey-light, radius: 4pt)[
+    #text(size: 9pt)[*Date:* #h(3cm) #box(width: 4cm, stroke: (bottom: 0.5pt + grey-text))[] #h(1cm) *Completed by:* #h(0.5cm) #box(width: 4cm, stroke: (bottom: 0.5pt + grey-text))[]]
+  ]
+  #v(1fr)
+  #line(length: 100%, stroke: 0.5pt + grey-border)
+  #v(3pt)
+  #text(size: 7pt, fill: grey-text)[Israel Wartime Readiness Field Guide · V4 · danielrosehill.com #h(1fr) Print and post visibly.]
+]
+
+// --- Printable 4: After Shelter Reset ---
+#page(margin: (top: 1.5cm, bottom: 1.5cm, left: 1.5cm, right: 1.5cm), header: none, footer: none)[
+  #block(width: 100%, inset: (x: 14pt, y: 10pt), fill: rgb("#d35400"), radius: 4pt)[#text(size: 14pt, weight: "bold", fill: white)[After Returning From Shelter — Reset]]
+  #v(0.2cm)
+  #text(size: 9pt, style: "italic")[Run immediately after all-clear. Restore readiness before the next alert.]
+  #v(0.2cm)
+  #table(
+    columns: (auto, 1fr, 2fr), inset: 9pt, stroke: 0.5pt + grey-border,
+    fill: (_, y) => if y == 0 { blue-dark } else if calc.odd(y) { grey-light } else { white },
+    align: (center, left, left),
+    [], text(fill: white, weight: "bold", size: 9pt)[ITEM], text(fill: white, weight: "bold", size: 9pt)[CHECK],
+    icon-bag, [*Go Bag* #critical], [#ci[BACK BY DOOR] #linebreak() #ci(d: "Anything fall out?")[RE-ZIPPED]],
+    icon-phone, [*Phone* #critical], [#ci(d: "If battery dropped")[PUT ON CHARGE] #linebreak() #ci[HFC APP STILL RUNNING]],
+    [], [*Power Bank*], [#ci(d: "May have been used")[PUT ON CHARGE]],
+    icon-water, [*Water*], [#ci(d: "If you drank emergency stock")[RESUPPLY]],
+    icon-shirt, [*Clothes & Shoes*], [#ci[BACK IN POSITION]],
+    [], [*Torch*], [#ci[BACK IN POSITION]],
+    icon-people, [*Dependents* #critical], [#ci[ALL ACCOUNTED FOR AND SAFE]],
+  )
+  #v(0.2cm)
+  #block(width: 100%, inset: 12pt, fill: green-light, radius: 6pt, stroke: 1pt + green-calm)[
+    #text(size: 10pt, weight: "bold", fill: green-calm)[Self-Care — Do these NOW, not later.]
+    #set text(size: 9.5pt)
+    #v(4pt)
+    #ci(d: "Stress suppresses appetite — eat anyway")[EAT FOOD] #linebreak()
+    #ci[DRINK WATER] #linebreak()
+    #ci[USE THE TOILET] #linebreak()
+    #ci(d: "If time allows")[SHOWER] #h(6pt) #ci(d: "Morale matters")[SHAVE / GROOM] #linebreak()
+    #ci(d: "When possible")[REST]
+    #v(4pt)
+    *Children:* #ci[FED] #h(4pt) #ci[WATERED] #h(4pt) #ci[TOILETED / CHANGED] #h(4pt) #ci[RESTED]
+  ]
+  #v(0.1cm)
+  #block(width: 100%, inset: 10pt, fill: grey-light, radius: 4pt)[
+    #text(size: 9pt)[*Date:* #h(3cm) #box(width: 4cm, stroke: (bottom: 0.5pt + grey-text))[] #h(1cm) *Completed by:* #h(0.5cm) #box(width: 4cm, stroke: (bottom: 0.5pt + grey-text))[]]
+  ]
+  #v(1fr)
+  #line(length: 100%, stroke: 0.5pt + grey-border)
+  #v(3pt)
+  #text(size: 7pt, fill: grey-text)[Israel Wartime Readiness Field Guide · V4 · danielrosehill.com #h(1fr) Print and post visibly.]
+]
+
+// --- Printable 5: Before Showering ---
+#page(margin: (top: 1.5cm, bottom: 1.5cm, left: 1.5cm, right: 1.5cm), header: none, footer: none)[
+  #block(width: 100%, inset: (x: 14pt, y: 10pt), fill: blue-accent, radius: 4pt)[#text(size: 14pt, weight: "bold", fill: white)[#icon-water Before Showering — Vulnerability Checklist]]
+  #v(0.2cm)
+  #text(size: 9pt, style: "italic")[You are at your most vulnerable in the shower. Minimise time, maximise readiness.]
+  #v(0.3cm)
+  #table(
+    columns: (auto, 1fr, 2fr), inset: 10pt, stroke: 0.5pt + grey-border,
+    fill: (_, y) => if y == 0 { blue-dark } else if calc.odd(y) { grey-light } else { white },
+    align: (center, left, left),
+    [], text(fill: white, weight: "bold", size: 9pt)[ITEM], text(fill: white, weight: "bold", size: 9pt)[CHECK],
+    icon-eye, [*News Check* #critical], [#ci(d: "No active alerts")[SITUATION SCANNED]],
+    icon-phone, [*Phone* #critical], [#ci(d: "Audible over water")[VOLUME AT MAXIMUM] #linebreak() #ci[IN BATHROOM OR JUST OUTSIDE]],
+    icon-shirt, [*Clothes* #critical], [#ci(d: "Not in another room")[FULL OUTFIT IN BATHROOM]],
+    icon-shoe, [*Shoes* #critical], [#ci[CLOSED-TOE BY BATHROOM DOOR]],
+    [], [*Towel*], [#ci[WITHIN REACH]],
+    icon-door, [*Door*], [#ci[UNLOCKED]],
+    icon-clock, [*Time* #critical], [#ci[KEEP IT SHORT]],
+  )
+  #v(0.4cm)
+  #block(width: 100%, inset: 12pt, fill: red-light, radius: 6pt, stroke: 1.5pt + red-alert)[
+    #text(size: 10pt, weight: "bold", fill: red-alert)[⚠ If a siren sounds while showering:]
+    #v(4pt)
+    #set text(size: 10pt)
+    + *Turn off water* (1 second)
+    + *Grab towel* — wrap as you move
+    + *Step into shoes* by door
+    + *Move to protected space* — clothes can wait, shelter cannot
+  ]
+  #v(0.2cm)
+  #align(center, text(size: 8pt, style: "italic")[Post on bathroom door or mirror.])
+  #v(1fr)
+  #line(length: 100%, stroke: 0.5pt + grey-border)
+  #v(3pt)
+  #text(size: 7pt, fill: grey-text)[Israel Wartime Readiness Field Guide · V4 · danielrosehill.com #h(1fr) Print and post visibly.]
+]
+
+// --- Printable 6: Before Leaving Home ---
+#page(margin: (top: 1.5cm, bottom: 1.5cm, left: 1.5cm, right: 1.5cm), header: none, footer: none)[
+  #block(width: 100%, inset: (x: 14pt, y: 10pt), fill: rgb("#d35400"), radius: 4pt)[#text(size: 14pt, weight: "bold", fill: white)[#icon-door Before Leaving Home]]
+  #v(0.2cm)
+  #text(size: 9pt, style: "italic")[Run every time you leave the house during wartime.]
+  #v(0.3cm)
+  #table(
+    columns: (auto, 1fr, 2fr), inset: 10pt, stroke: 0.5pt + grey-border,
+    fill: (_, y) => if y == 0 { blue-dark } else if calc.odd(y) { grey-light } else { white },
+    align: (center, left, left),
+    [], text(fill: white, weight: "bold", size: 9pt)[ITEM], text(fill: white, weight: "bold", size: 9pt)[CHECK],
+    icon-bag, [*Go Bag* #critical], [#ci[TAKING WITH YOU]],
+    icon-eye, [*News* #critical], [#ci(d: "HFC app + news")[SITUATION SCANNED]],
+    icon-shield, [*Shelters* #critical], [#ci(d: "At destination + route")[NEAREST SHELTERS IDENTIFIED]],
+    icon-clock, [*Time To Shelter*], [#ci[KNOWN FOR DESTINATION]],
+    icon-phone, [*Phone* #critical], [#ci[CHARGED] #h(4pt) #ci[HFC APP] #h(4pt) #ci[LOCATION ON]],
+    icon-car, [*Car Fuel*], [#ci[AT LEAST HALF A TANK]],
+    icon-people, [*Household*], [#ci[DESTINATION + RETURN TIME COMMUNICATED]],
+  )
+  #v(0.3cm)
+  #block(width: 100%, inset: 12pt, fill: red-light, radius: 6pt, stroke: 1.5pt + red-alert)[
+    #text(size: 10pt, weight: "bold", fill: red-alert)[⚠ If a siren sounds while driving:]
+    #v(4pt)
+    #set text(size: 10pt)
+    + *Pull over* to the side of the road
+    + *Exit the vehicle* and move away
+    + *Enter nearest building* or lie flat, protect your head
+    + *Wait 10 minutes* before returning to vehicle
+  ]
+  #v(0.2cm)
+  #block(width: 100%, inset: 10pt, fill: grey-light, radius: 4pt)[
+    #text(size: 9pt)[*Date:* #h(3cm) #box(width: 4cm, stroke: (bottom: 0.5pt + grey-text))[] #h(1cm) *Completed by:* #h(0.5cm) #box(width: 4cm, stroke: (bottom: 0.5pt + grey-text))[]]
+  ]
+  #v(1fr)
+  #line(length: 100%, stroke: 0.5pt + grey-border)
+  #v(3pt)
+  #text(size: 7pt, fill: grey-text)[Israel Wartime Readiness Field Guide · V4 · danielrosehill.com #h(1fr) Print and post visibly.]
+]
+
+// --- Printable 7: Night Alarm ---
+#page(margin: (top: 1.5cm, bottom: 1.5cm, left: 1.5cm, right: 1.5cm), header: none, footer: none)[
+  #block(width: 100%, inset: (x: 14pt, y: 10pt), fill: red-alert, radius: 4pt)[#text(size: 14pt, weight: "bold", fill: white)[#icon-moon Night Alarm — The 30-Second Drill]]
+  #v(0.2cm)
+  #text(size: 9pt, style: "italic")[Post by your bed. Everything here so you don't have to think at 3am.]
+  #v(0.3cm)
+  #block(width: 100%, inset: 14pt, fill: red-light, radius: 8pt, stroke: 2pt + red-alert)[
+    #text(size: 14pt, weight: "bold", fill: red-alert)[The First 5 Seconds]
+    #v(6pt)
+    #set text(size: 12pt)
+    + *Siren or phone alert wakes you.* Do not process. Just move.
+    + *Feet on floor → into shoes.* Same spot every night.
+    + *Grab glasses* and *phone.*
+    + *Caffeine pill _(optional)_* — sip of water if bedside.
+  ]
+  #v(0.3cm)
+  #block(width: 100%, inset: 14pt, fill: rgb("#fff8e1"), radius: 8pt, stroke: 2pt + orange-warm)[
+    #text(size: 14pt, weight: "bold", fill: orange-warm)[The Next 10–20 Seconds]
+    #v(6pt)
+    #set text(size: 12pt)
+    5. *Clothes:* Pull on whatever is laid out. Speed over appearance.
+    6. *Grab torch* if power is out.
+    7. *Move to protected space* or front door.
+  ]
+  #v(0.3cm)
+  #block(width: 100%, inset: 14pt, fill: blue-light, radius: 8pt, stroke: 2pt + blue-accent)[
+    #text(size: 14pt, weight: "bold", fill: blue-dark)[For Parents]
+    #v(6pt)
+    #set text(size: 12pt)
+    8. *One parent → children.* Other → go bag. _(Pre-assigned.)_
+    9. *Carry baby in babywear* by the door. Do not stop to dress them.
+  ]
+  #v(0.4cm)
+  #block(width: 100%, inset: 12pt, fill: grey-light, radius: 6pt, stroke: 1pt + grey-border)[
+    #set text(size: 11pt, weight: "bold", fill: blue-dark)
+    #align(center)[Do not think. Follow the procedure. \ Do not check your phone. The siren means go. \ It gets easier after 2–3 nights.]
+  ]
+  #v(1fr)
+  #line(length: 100%, stroke: 0.5pt + grey-border)
+  #v(3pt)
+  #text(size: 7pt, fill: grey-text)[Israel Wartime Readiness Field Guide · V4 · danielrosehill.com #h(1fr) Print and post visibly.]
+]
+
+// --- Printable 8: Emergency Numbers ---
+#page(margin: (top: 1.5cm, bottom: 1.5cm, left: 1.5cm, right: 1.5cm), header: none, footer: none)[
+  #block(width: 100%, inset: (x: 14pt, y: 10pt), fill: red-alert, radius: 4pt)[#text(size: 14pt, weight: "bold", fill: white)[#icon-alert Emergency Numbers — Israel]]
+  #v(0.3cm)
+  #block(width: 100%, radius: 6pt, clip: true, stroke: 2pt + red-alert)[
+    #table(
+      columns: (auto, 1fr, 1.5fr), inset: 9pt, stroke: 0.5pt + grey-border,
+      fill: (_, y) => if y == 0 { red-alert } else if calc.odd(y) { red-light } else { white },
+      align: (center, left, left),
+      text(fill: white, weight: "bold", size: 9pt)[NUMBER], text(fill: white, weight: "bold", size: 9pt)[SERVICE], text(fill: white, weight: "bold", size: 9pt)[NOTES],
+      text(weight: "bold", size: 16pt)[100], [*Israel Police*], [Security incidents, unexploded ordnance],
+      text(weight: "bold", size: 16pt)[101], [*Magen David Adom*], [Injuries, medical emergencies],
+      text(weight: "bold", size: 16pt)[102], [*Fire & Rescue*], [Fires, trapped persons, collapse],
+      text(weight: "bold", size: 16pt)[103], [*Electric Corp.*], [Power outages, electrical hazards],
+      text(weight: "bold", size: 16pt)[104], [*Home Front Command*], [Guidelines, alerts, emergency info],
+      text(weight: "bold", size: 16pt)[110], [*Police Info*], [Road blocks, police information],
+    )
+  ]
+  #v(0.2cm)
+  #table(
+    columns: (auto, 1fr), inset: 8pt, stroke: 0.5pt + grey-border,
+    fill: (_, y) => if y == 0 { blue-dark } else if calc.odd(y) { green-light } else { white },
+    align: (center, left),
+    text(fill: white, weight: "bold", size: 9pt)[NUMBER], text(fill: white, weight: "bold", size: 9pt)[SUPPORT & WELFARE],
+    text(weight: "bold")[118], [Welfare Ministry],
+    text(weight: "bold")[1201], [ERAN — Emotional first aid],
+    text(weight: "bold")[\*8840], [Senior Citizens],
+    text(weight: "bold")[105], [Missing persons],
+    text(weight: "bold")[1-800-363-363], [NATAL — Trauma support],
+  )
+  #v(0.3cm)
+  #block(width: 100%, inset: 10pt, fill: grey-light, radius: 6pt)[
+    #text(size: 9pt, weight: "bold")[Personal Emergency Contacts:]
+    #v(4pt)
+    #grid(columns: (1fr, 1fr), column-gutter: 12pt, row-gutter: 8pt,
+      [Name: #box(width: 5cm, stroke: (bottom: 0.5pt + grey-text))[]], [Phone: #box(width: 5cm, stroke: (bottom: 0.5pt + grey-text))[]],
+      [Name: #box(width: 5cm, stroke: (bottom: 0.5pt + grey-text))[]], [Phone: #box(width: 5cm, stroke: (bottom: 0.5pt + grey-text))[]],
+      [Name: #box(width: 5cm, stroke: (bottom: 0.5pt + grey-text))[]], [Phone: #box(width: 5cm, stroke: (bottom: 0.5pt + grey-text))[]],
+    )
+  ]
+  #v(0.2cm)
+  #align(center, text(size: 9pt, weight: "bold", fill: red-alert)[PRINT. Post on fridge, in mamad, and in go bag.])
+  #v(1fr)
+  #line(length: 100%, stroke: 0.5pt + grey-border)
+  #v(3pt)
+  #text(size: 7pt, fill: grey-text)[Israel Wartime Readiness Field Guide · V4 · danielrosehill.com #h(1fr) Print and post visibly.]
+]
+
+// --- Printable 9: Shabbat / Hag ---
+#page(margin: (top: 1.5cm, bottom: 1.5cm, left: 1.5cm, right: 1.5cm), header: none, footer: none)[
+  #block(width: 100%, inset: (x: 14pt, y: 10pt), fill: rgb("#8e44ad"), radius: 4pt)[#text(size: 14pt, weight: "bold", fill: white)[Shabbat / Hag — Pre-Candle-Lighting Checklist]]
+  #v(0.2cm)
+  #text(size: 9pt, style: "italic")[Complete before candle-lighting. Sirens are your only alert when phones are off.]
+  #v(0.3cm)
+  #table(
+    columns: (auto, 1fr, 2fr), inset: 9pt, stroke: 0.5pt + grey-border,
+    fill: (_, y) => if y == 0 { blue-dark } else if calc.odd(y) { grey-light } else { white },
+    align: (center, left, left),
+    [], text(fill: white, weight: "bold", size: 9pt)[ITEM], text(fill: white, weight: "bold", size: 9pt)[CHECK],
+    icon-alert, [*TV / Ch 14* #critical], [#ci[PLAYING] #linebreak() #ci(d: "Not muted")[AUDIBLE FROM BEDROOMS]],
+    icon-radio, [*Radio* #critical], [#ci[FREQUENCY VERIFIED] #linebreak() #ci[VOLUME MAXIMUM] #linebreak() #ci[POWER — AC OR BATTERIES]],
+    icon-bag, [*Go Bag*], [#ci[BY DOOR] #h(4pt) #ci[VERIFIED]],
+    icon-bag, [*Shabbat Supplies*], [#ci(d: "Siddur, kiddush cup, snacks")[PACKED]],
+    icon-shoe, [*Shoes* #critical], [#ci[CLOSED-TOE BY BED + DOOR]],
+    icon-shirt, [*Clothes*], [#ci[LAID OUT BY BED]],
+    icon-key, [*Keys*], [#ci[BY FRONT DOOR]],
+    [], [*Torch*], [#ci[ON NIGHTSTAND]],
+    [], [*Windows*], [#ci(d: "To hear outdoor sirens")[SLIGHTLY OPEN]],
+  )
+  #v(0.3cm)
+  #block(width: 100%, inset: 12pt, fill: rgb("#f3e5f5"), radius: 6pt, stroke: 1.5pt + rgb("#8e44ad"))[
+    #text(size: 10pt, weight: "bold", fill: rgb("#8e44ad"))[Pikuach Nefesh]
+    #v(4pt)
+    #text(size: 9.5pt)[Preservation of life overrides all Shabbat prohibitions. If a siren sounds, you *may and must* use your phone, carry items, and do whatever is needed to reach shelter. This is *halacha*.]
+  ]
+  #v(0.2cm)
+  #block(width: 100%, inset: 10pt, fill: red-light, radius: 6pt, stroke: 1pt + red-alert)[
+    #text(size: 9pt, weight: "bold", fill: red-alert)[During Shabbat:] #text(size: 9pt)[ Windows open for sirens · TV/radio audible · Know shelter route in dark · Stay 10 min or until all-clear]
+  ]
+  #v(1fr)
+  #line(length: 100%, stroke: 0.5pt + grey-border)
+  #v(3pt)
+  #text(size: 7pt, fill: grey-text)[Israel Wartime Readiness Field Guide · V4 · danielrosehill.com #h(1fr) Print and post visibly.]
 ]
 
 // ══════════════════════════════════════════════
