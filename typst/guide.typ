@@ -1568,6 +1568,76 @@ _If phone and internet are down, a battery-powered or hand-crank AM/FM radio is 
 ]
 
 // ══════════════════════════════════════════════
+// REFERENCES
+// ══════════════════════════════════════════════
+#set-section("References", colour: sec-col-app)
+
+= References
+
+_All sources from the Israel Home Front Command (Pikud HaOref) English-language National Emergency Portal. Accessed and archived: 20 March 2026._
+
+#v(0.3cm)
+
+#table(
+  columns: (1fr, 2fr),
+  inset: 8pt,
+  stroke: 0.5pt + grey-border,
+  fill: (_, y) => if y == 0 { blue-dark } else if calc.odd(y) { grey-light } else { white },
+  align: left,
+  text(fill: white, weight: "bold", size: 9pt)[TOPIC],
+  text(fill: white, weight: "bold", size: 9pt)[SOURCE],
+
+  [Protection Guidelines],
+  [oref.org.il/eng/emergencies/protection-guidelines],
+
+  [Emergency Supplies],
+  [oref.org.il/eng/articles/info/preparing-protected-space/1201],
+
+  [Reaching Shelter],
+  [oref.org.il/eng/articles/protection-guidelines/preparing-protected-space/1103],
+
+  [Residential Protected Space],
+  [oref.org.il/eng/articles/info/preparing-protected-space/1205],
+
+  [Types of Protected Area],
+  [oref.org.il/eng/articles/info/preparing-protected-space/1212],
+
+  [Communal Shelter Preparation],
+  [oref.org.il/eng/articles/protection-guidelines/preparing-protected-space/1704],
+
+  [Emergency Phone Numbers],
+  [oref.org.il/eng/articles/emergency-preparedness/preparing-routine/1211],
+
+  [FAQs — All],
+  [oref.org.il/eng/questions-answers/faq],
+
+  [FAQs — Rockets & Missiles],
+  [oref.org.il/eng/questions-answers/rockets-missles-faq],
+
+  [FAQs — Defensive Guidelines],
+  [oref.org.il/eng/questions-answers/defensive-guidelines-faq],
+
+  [FAQs — Receiving Alerts],
+  [oref.org.il/eng/questions-answers/receiving-alerts-faq],
+
+  [FAQs — Emergency Preparedness],
+  [oref.org.il/eng/questions-answers/emergency-coping-faq],
+)
+
+#v(0.3cm)
+
+#block(
+  width: 100%,
+  inset: 10pt,
+  fill: grey-light,
+  radius: 4pt,
+)[
+  #text(size: 9pt, style: "italic")[
+    Source HTML files are preserved in the `sources/hfc-official/` directory of this repository for transparency and verification. Always consult oref.org.il for the most current guidance.
+  ]
+]
+
+// ══════════════════════════════════════════════
 // DISCLAIMER (LAST PAGE)
 // ══════════════════════════════════════════════
 #set-section("Disclaimer", colour: sec-col-app)
