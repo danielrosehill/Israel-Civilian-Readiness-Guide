@@ -36,10 +36,10 @@ plugins:
   - search
   - i18n:
       docs_structure: folder
+      default_language: en
       languages:
         en:
           name: English
-          default: true
           build: true
         he:
           name: עברית
