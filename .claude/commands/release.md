@@ -21,9 +21,10 @@ for f in typst/printables/0*.typ; do
 done
 ```
 
-Then combine all into one PDF:
+Then compile the combined booklet and door-display PDFs:
 ```bash
-pdfunite output/printables/0*.pdf output/printables/All-Printables-Combined.pdf
+typst compile --root . typst/combined.typ output/printables/All-Printables-Combined.pdf
+typst compile --root . typst/door-display.typ output/printables/Door-Display-Checklists.pdf
 ```
 
 Report any compilation errors.
@@ -55,6 +56,7 @@ gh release create v<VERSION> \
   output/Israel-Wartime-Readiness-Field-Guide-v4.pdf \
   output/Israel-Wartime-Readiness-Field-Guide-v4.epub \
   output/printables/All-Printables-Combined.pdf \
+  output/printables/Door-Display-Checklists.pdf \
   output/printables/01-paws-bed.pdf \
   output/printables/02-daytime-posture.pdf \
   output/printables/03-before-bed.pdf \
@@ -63,7 +65,13 @@ gh release create v<VERSION> \
   output/printables/06-before-leaving.pdf \
   output/printables/07-night-alarm.pdf \
   output/printables/08-emergency-numbers.pdf \
-  output/printables/09-shabbat.pdf
+  output/printables/09-shabbat.pdf \
+  output/printables/10-news-schedule.pdf \
+  output/printables/11-respiratory-protection.pdf \
+  output/printables/12-lull-resupply.pdf \
+  output/printables/13-terrorist-infiltration.pdf \
+  output/printables/14-uav-drone.pdf \
+  output/printables/15-bathing-baby.pdf
 ```
 
 ## 6. Update Downloads Page
