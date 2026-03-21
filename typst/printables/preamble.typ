@@ -1,6 +1,4 @@
 // Shared preamble for standalone printable compilation
-// When included from guide.typ, these are already defined — this file is for standalone use only
-
 #import "@preview/fontawesome:0.5.0": *
 
 #let blue-dark   = rgb("#1a3a5c")
@@ -16,6 +14,7 @@
 #let grey-border = rgb("#cccccc")
 #let white       = rgb("#ffffff")
 #let orange-warm = rgb("#e67e22")
+#let purple-shab = rgb("#8e44ad")
 
 // Icon helpers
 #let icon(name, colour: blue-mid) = text(fill: colour, size: 11pt, fa-icon(name))
@@ -56,21 +55,20 @@
 // Critical marker
 #let critical = text(fill: red-alert, weight: "bold", size: 12pt)[ ⚠]
 
-// Call-respond item: response body is pre-formatted (caps bold, connectors regular)
-// Use as: cr[*CHARGING* or *CHARGED*]
-#let cr(body, d: none) = {
+// Call-respond line: checkbox left, call name next, response RIGHT-ALIGNED
+// Usage: cr-line("Charge Status?", [*CHARGING* or *CHARGED*])
+#let cr-line(name, response, d: none) = {
   checkbox
-  h(4pt)
-  body
+  h(3pt)
+  text(size: 9pt, fill: blue-dark)[#name]
+  h(1fr)
+  response
   if d != none {
     linebreak()
     h(18pt)
     text(style: "italic", size: 9pt)[#d]
   }
 }
-
-// Call name label (the sub-item name the caller reads out)
-#let call(name) = text(size: 9pt, fill: blue-dark)[#name]
 
 // Legacy checklist item (bold response) — kept for non-call-respond contexts
 #let ci(d: none, response) = {
@@ -99,20 +97,6 @@
   ]
 }
 
-// Printable page setup (standalone)
-#let printable-page-setup() = {
-  set page(
-    paper: "a4",
-    margin: (top: 1.5cm, bottom: 1.5cm, left: 1.5cm, right: 1.5cm),
-  )
-  set text(
-    font: "Atkinson Hyperlegible",
-    size: 10pt,
-    fill: grey-text,
-  )
-  set par(leading: 0.7em)
-}
-
 // Printable header bar
 #let printable-header(title, colour: blue-dark, icon-content: none) = {
   block(
@@ -128,7 +112,7 @@
   ]
 }
 
-// Printable footer
+// Printable footer (standalone only — combined PDF uses its own)
 #let printable-footer() = {
   v(1fr)
   line(length: 100%, stroke: 0.5pt + grey-border)
@@ -139,3 +123,19 @@
     Print and post visibly. Replace when updated.
   ]
 }
+
+// Standard page setup for standalone printables
+#let standalone-page = (
+  paper: "a4",
+  margin: (top: 1.5cm, bottom: 1.5cm, left: 1.5cm, right: 1.5cm),
+)
+
+// Respond column table header
+#let respond-table-headers() = (
+  [],
+  text(fill: white, weight: "bold", size: 9pt)[CALL],
+  text(fill: white, weight: "bold", size: 9pt)[RESPOND],
+)
+
+// Standard checklist table setup
+#let checklist-table-fill = (_, y) => if y == 0 { blue-dark } else if calc.odd(y) { grey-light } else { white }
