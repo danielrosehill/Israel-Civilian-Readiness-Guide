@@ -14,7 +14,9 @@
   ]
   #v(0.2cm)
 
-  #text(size: 10pt, weight: "bold", fill: blue-dark)[Resupply — Priority Order]
+  #block(width: 100%, inset: (x: 10pt, y: 6pt), fill: blue-light, radius: 3pt)[
+    #text(size: 12pt, weight: "bold", fill: blue-dark)[Resupply — Priority Order]
+  ]
   #v(0.1cm)
   #table(
     columns: (auto, 1fr, 2.5fr),
@@ -43,7 +45,9 @@
     [#cr-line("Clean Clothes?", [*DONE*], d: "ready for the next round")],
   )
   #v(0.25cm)
-  #text(size: 10pt, weight: "bold", fill: blue-dark)[Home & Safety Checks]
+  #block(width: 100%, inset: (x: 10pt, y: 6pt), fill: blue-light, radius: 3pt)[
+    #text(size: 12pt, weight: "bold", fill: blue-dark)[Home & Safety Checks]
+  ]
   #v(0.1cm)
   #table(
     columns: (auto, 1fr, 2.5fr),

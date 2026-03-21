@@ -4,6 +4,7 @@
 
 #import "printables/preamble.typ": *
 #import "printables/title-page.typ": title-page-content
+#import "printables/index-page.typ": index-page-content
 #import "printables/01-paws-bed.typ": quick-readiness-content
 #import "printables/02-daytime-posture.typ": daytime-posture-content
 #import "printables/03-before-bed.typ": before-bed-content
@@ -37,9 +38,15 @@
   margin: (top: 2.2cm, bottom: 2.2cm, left: 1.5cm, right: 1.5cm),
   header: context {
     let pg = counter(page).get().first()
-    let name = section-name.get()
-    let colour = section-colour.get()
-    if pg > 1 and name != "" {
+    // Find markers on this page, fall back to most recent before this page
+    let all-markers = query(<section-marker>)
+    let current-page = here().page()
+    let on-page = all-markers.filter(m => m.location().page() == current-page)
+    let before = all-markers.filter(m => m.location().page() < current-page)
+    let latest = if on-page.len() > 0 { on-page.first() } else if before.len() > 0 { before.last() } else { none }
+    if pg > 1 and latest != none {
+      let name = section-name.at(latest.location())
+      let colour = section-colour.at(latest.location())
       block(
         width: 100%,
         inset: (x: 12pt, y: 8pt),
@@ -54,9 +61,14 @@
   },
   footer: context {
     let pg = counter(page).get().first()
-    let name = section-name.get()
-    let colour = section-colour.get()
-    if pg > 1 and name != "" {
+    let all-markers = query(<section-marker>)
+    let current-page = here().page()
+    let on-page = all-markers.filter(m => m.location().page() == current-page)
+    let before = all-markers.filter(m => m.location().page() < current-page)
+    let latest = if on-page.len() > 0 { on-page.first() } else if before.len() > 0 { before.last() } else { none }
+    if pg > 1 and latest != none {
+      let name = section-name.at(latest.location())
+      let colour = section-colour.at(latest.location())
       block(
         width: 100%,
         inset: (x: 12pt, y: 8pt),
@@ -80,102 +92,58 @@
 
 #title-page-content()
 
+// Helper: start a new section (pagebreak, update state, place marker, render content)
+#let section(name, colour, content) = {
+  pagebreak()
+  section-name.update(name)
+  section-colour.update(colour)
+  [#metadata(name) <section-marker>]
+  content
+}
+
 // ═══════════════════════════════════════
-// CHECKLISTS — each gets a coloured footer bar
+// INDEX
 // ═══════════════════════════════════════
 
-// 1. Quick Readiness Check
-#pagebreak()
-#section-name.update("Quick Readiness Check")
-#section-colour.update(rgb("#0e7c47"))
-#quick-readiness-content()
+#section("Index", blue-dark, index-page-content())
 
-// 2. Daytime At-Home Posture
-#pagebreak()
-#section-name.update("Daytime At-Home Posture")
-#section-colour.update(rgb("#d35400"))
-#daytime-posture-content()
+// ═══════════════════════════════════════
+// GENERAL READINESS
+// ═══════════════════════════════════════
 
-// 3. Before Bed
-#pagebreak()
-#section-name.update("Before Bed Checklist")
-#section-colour.update(blue-dark)
-#before-bed-content()
+#section("Quick Readiness Check", rgb("#0e7c47"), quick-readiness-content())
+#section("Daytime At-Home Posture", rgb("#d35400"), daytime-posture-content())
+#section("Before Bed Checklist", blue-dark, before-bed-content())
+#section("Night Alarm — 30-Second Drill", red-alert, night-alarm-content())
 
-// 4. After Shelter — Reset
-#pagebreak()
-#section-name.update("After Shelter — Reset")
-#section-colour.update(rgb("#d35400"))
-#after-shelter-content()
+// ═══════════════════════════════════════
+// SITUATIONAL — ROCKETS & MISSILES
+// ═══════════════════════════════════════
 
-// 5. Before Showering
-#pagebreak()
-#section-name.update("Before Showering")
-#section-colour.update(blue-accent)
-#before-shower-content()
+#section("Before Showering", blue-accent, before-shower-content())
+#section("Before Leaving Home", rgb("#d35400"), before-leaving-content())
+#section("After Shelter — Reset", rgb("#d35400"), after-shelter-content())
+#section("Bathing a Baby", green-calm, bathing-baby-content())
 
-// 6. Before Leaving Home
-#pagebreak()
-#section-name.update("Before Leaving Home")
-#section-colour.update(rgb("#d35400"))
-#before-leaving-content()
+// ═══════════════════════════════════════
+// SHABBAT & SPECIAL
+// ═══════════════════════════════════════
 
-// 7. Night Alarm
-#pagebreak()
-#section-name.update("Night Alarm — 30-Second Drill")
-#section-colour.update(red-alert)
-#night-alarm-content()
+#section("Shabbat / Hag", purple-shab, shabbat-content())
 
-// 8. Emergency Numbers
-#pagebreak()
-#section-name.update("Emergency Numbers")
-#section-colour.update(red-alert)
-#emergency-numbers-content()
+// ═══════════════════════════════════════
+// REFERENCE & MAINTENANCE
+// ═══════════════════════════════════════
 
-// 9. Shabbat / Hag
-#pagebreak()
-#section-name.update("Shabbat / Hag")
-#section-colour.update(purple-shab)
-#shabbat-content()
+#section("Emergency Numbers", red-alert, emergency-numbers-content())
+#section("Situational Awareness — Standard", blue-dark, news-standard-content())
+#section("Situational Awareness — Extra Vigilant", red-alert, news-vigilant-content())
+#section("Respiratory Protection", orange-warm, respiratory-content())
+#section("Lull / Resupply", green-calm, lull-resupply-content())
 
-// 10a. Situational Awareness — Standard Wartime
-#pagebreak()
-#section-name.update("Situational Awareness — Standard")
-#section-colour.update(blue-dark)
-#news-standard-content()
+// ═══════════════════════════════════════
+// SPECIFIC THREAT PROTOCOLS
+// ═══════════════════════════════════════
 
-// 10b. Situational Awareness — Extra Vigilant
-#pagebreak()
-#section-name.update("Situational Awareness — Extra Vigilant")
-#section-colour.update(red-alert)
-#news-vigilant-content()
-
-// 11. Respiratory Protection
-#pagebreak()
-#section-name.update("Respiratory Protection")
-#section-colour.update(orange-warm)
-#respiratory-content()
-
-// 12. Lull / Resupply
-#pagebreak()
-#section-name.update("Lull / Resupply")
-#section-colour.update(green-calm)
-#lull-resupply-content()
-
-// 13. Terrorist Infiltration
-#pagebreak()
-#section-name.update("Terrorist Infiltration")
-#section-colour.update(red-alert)
-#terrorist-infiltration-content()
-
-// 14. UAV / Drone Alert
-#pagebreak()
-#section-name.update("UAV / Drone Alert")
-#section-colour.update(rgb("#d35400"))
-#uav-drone-content()
-
-// 15. Bathing a Baby
-#pagebreak()
-#section-name.update("Bathing a Baby")
-#section-colour.update(green-calm)
-#bathing-baby-content()
+#section("Terrorist Infiltration", red-alert, terrorist-infiltration-content())
+#section("UAV / Drone Alert", rgb("#d35400"), uav-drone-content())
