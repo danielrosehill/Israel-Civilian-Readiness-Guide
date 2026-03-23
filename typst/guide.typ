@@ -947,7 +947,7 @@ _When there's a pause in alerts — hours or days — use the window wisely. The
 - *Pets:* many shelters do not allow animals — check in advance
 - Bring something for children to do
 
-== 2.11 OPSEC & Information Discipline
+== 2.11 INFOSEC & Information Discipline
 
 #warning-box[During wartime, what you share online can endanger lives — including your own.]
 
@@ -982,7 +982,7 @@ _When there's a pause in alerts — hours or days — use the window wisely. The
   fill: grey-light,
   radius: 4pt,
 )[
-  #align(center, text(style: "italic")[Even well-intentioned sharing can be lethal OPSEC. When in doubt, don't post.])
+  #align(center, text(style: "italic")[Even well-intentioned sharing can be lethal INFOSEC. When in doubt, don't post.])
 ]
 
 #pagebreak()

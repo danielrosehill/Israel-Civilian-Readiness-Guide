@@ -36,7 +36,7 @@
 #import "printables/18-pre-emergency-home.typ": pre-emergency-home-content
 #import "printables/19-go-bag.typ": go-bag-content
 #import "printables/20-advance-warning.typ": advance-warning-content
-#import "printables/21-opsec.typ": infosec-content
+#import "printables/21-infosec.typ": infosec-content
 
 // ═══════════════════════════════════════
 // COLOUR ROTATION for section tabs

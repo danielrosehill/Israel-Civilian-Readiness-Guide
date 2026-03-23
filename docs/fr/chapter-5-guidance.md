@@ -251,7 +251,7 @@ C'est l'un des scenarios les plus difficiles. Tout ce qui est decrit au §4.4 ex
 - **Animaux domestiques :** de nombreux abris n'acceptent pas les animaux — renseignez-vous a l'avance
 - Apportez de quoi occuper les enfants
 
-## 5.11 OPSEC et discipline de l'information
+## 5.11 INFOSEC et discipline de l'information
 
 !!! danger "Avertissement"
     En temps de guerre, ce que vous partagez en ligne peut mettre des vies en danger — y compris la votre.
@@ -272,7 +272,7 @@ C'est l'un des scenarios les plus difficiles. Tout ce qui est decrit au §4.4 ex
 
 **Faites :** Utilisez les **sources officielles** (appli HFC, porte-parole de Tsahal, police israelienne, medias etablis). Verifiez avant de partager. Dites aux autres de supprimer les informations de localisation sensibles.
 
-*Meme un partage bien intentionné peut etre une faille OPSEC mortelle. En cas de doute, ne publiez pas.*
+*Meme un partage bien intentionné peut etre une faille INFOSEC mortelle. En cas de doute, ne publiez pas.*
 
 ## 5.12 Directives preliminaires (Alerte avancee)
 

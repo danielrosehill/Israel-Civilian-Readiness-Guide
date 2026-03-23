@@ -552,7 +552,7 @@ This is one of the hardest scenarios. Everything in §4.4 exists to make this mo
 - **Pets:** many shelters do not allow animals — check in advance
 - Bring something for children to do
 
-## 5.11 OPSEC & Information Discipline
+## 5.11 INFOSEC & Information Discipline
 
 > ⚠️ **WARNING:** During wartime, what you share online can endanger lives — including your own.
 
@@ -572,7 +572,7 @@ This is one of the hardest scenarios. Everything in §4.4 exists to make this mo
 
 **Do:** Use **official sources** (HFC app, IDF Spokesperson, Israel Police, established media). Check before sharing. Tell others to delete sensitive location info.
 
-*Even well-intentioned sharing can be lethal OPSEC. When in doubt, don't post.*
+*Even well-intentioned sharing can be lethal INFOSEC. When in doubt, don't post.*
 
 ## 5.12 Preliminary Guidelines (Advance Warning)
 

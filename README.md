@@ -17,7 +17,7 @@ A comprehensive field guide and checklist system for civilian preparedness durin
 - **Quick Smoke Test (PAWS BED)** — 7-item rapid readiness check with mnemonic
 - **Master Checklist** — Full readiness verification (tech, home, go bag, people, personal effects, situational awareness)
 - **Situational Checklists** — Daytime posture, after shelter reset, before showering, before bed, before leaving home
-- **Guidance Notes** — Go bag selection, shelter behaviour, moving safely, night alarms, alert fatigue, protracted conflict wellness, caring for vulnerable neighbours, public shelters, OPSEC, infiltration protocol
+- **Guidance Notes** — Go bag selection, shelter behaviour, moving safely, night alarms, alert fatigue, protracted conflict wellness, caring for vulnerable neighbours, public shelters, INFOSEC, infiltration protocol
 - **Appendices** — HFC app config, emergency numbers, mamad inspection, protected space decision tree, Hebrew glossary, emergency radio frequencies, pantry planning
 
 ## Repository Structure

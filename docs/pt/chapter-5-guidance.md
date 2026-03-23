@@ -251,7 +251,7 @@ Este e um dos cenarios mais dificeis. Tudo no §4.4 existe para tornar este mome
 - **Animais de estimacao:** muitos abrigos nao permitem animais — verifique com antecedencia
 - Leve algo para as criancas fazerem
 
-## 5.11 OPSEC & Disciplina de Informacao
+## 5.11 INFOSEC & Disciplina de Informacao
 
 !!! danger "Aviso"
     Durante tempo de guerra, o que voce compartilha online pode colocar vidas em risco — incluindo a sua.
@@ -272,7 +272,7 @@ Este e um dos cenarios mais dificeis. Tudo no §4.4 existe para tornar este mome
 
 **Faca:** Use **fontes oficiais** (app HFC, Porta-voz das IDF, Policia de Israel, midia estabelecida). Verifique antes de compartilhar. Diga aos outros para apagar informacoes sensiveis de localizacao.
 
-*Mesmo compartilhamento bem-intencionado pode ser OPSEC letal. Na duvida, nao publique.*
+*Mesmo compartilhamento bem-intencionado pode ser INFOSEC letal. Na duvida, nao publique.*
 
 ## 5.12 Orientacoes Preliminares (Aviso Antecipado)
 

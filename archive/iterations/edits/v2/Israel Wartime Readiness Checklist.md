@@ -41,7 +41,7 @@
 | | 5.7 Wellness During Protracted Conflict | |
 | | 5.8 Caring for Elderly Neighbours & Vulnerable People | |
 | | 5.9 Using Communal / Public Shelters | |
-| | 5.10 OPSEC & Information Discipline | |
+| | 5.10 INFOSEC & Information Discipline | |
 | | 5.11 Preliminary Guidelines (Advance Warning) | |
 | | 5.12 Terrorist Infiltration | |
 | | 5.13 Hostile Aerial Vehicle (UAV/Drone) Infiltration | |
@@ -486,7 +486,7 @@ Public shelters (miklat tziburi / מקלט ציבורי) and institutional prote
 - Report any damage or maintenance issues to the municipality
 - If the shelter was dirty, locked improperly, or unusable, report it — you're improving it for next time
 
-### 5.10 OPSEC & Information Discipline
+### 5.10 INFOSEC & Information Discipline
 
 During wartime, what you share online can endanger lives — including your own.
 
@@ -494,7 +494,7 @@ During wartime, what you share online can endanger lives — including your own.
 - **Exact locations of impacts or landings.** Not on WhatsApp, not on X, not on Telegram, not on Instagram stories. Enemy forces monitor social media in real time to calibrate targeting. A photo of "where it landed near my house" tells them exactly where to aim next
 - **Locations of military or emergency service activity** — troop movements, ambulance staging areas, Iron Dome battery positions, emergency service response times
 - **Photos or videos of damage** that reveal identifiable locations (street signs, building numbers, landmarks)
-- **Information about casualties** before families have been notified. This is both an OPSEC issue and a basic human decency issue
+- **Information about casualties** before families have been notified. This is both an INFOSEC issue and a basic human decency issue
 
 **Do NOT believe:**
 - **Unverified reports on X (Twitter), Telegram, or WhatsApp groups.** These platforms are flooded with misinformation during conflict — some accidental, some deliberate. Adversaries actively seed false information to cause panic, misdirect, and demoralise
@@ -509,7 +509,7 @@ During wartime, what you share online can endanger lives — including your own.
 - Report disinformation to platform moderation where possible
 - Remember that even **positive** unverified rumours ("they shot down everything, we're fine") are harmful — they create false security and undermine trust in real information
 
-> *Even well-intentioned sharing can be lethal OPSEC. When in doubt, don't post.*
+> *Even well-intentioned sharing can be lethal INFOSEC. When in doubt, don't post.*
 
 ### 5.11 Preliminary Guidelines (Advance Warning)
 

@@ -13,7 +13,7 @@ Before flagging any factual issue related to shelter procedures, alert responses
 Key guideline categories and their files:
 - **Shelter & protected spaces**: `guidelines/shelter-and-home/protected-space-1.md`, `protected-space-2.md`, `preparing-home.md`
 - **Alerts & communication**: `guidelines/alerts-and-communication/receiving-alerts-1.md`, `receiving-alerts-2.md`, `emergency-communication.md`
-- **OPSEC / info sharing**: `guidelines/alerts-and-communication/do-not-share-info.md`
+- **INFOSEC / info sharing**: `guidelines/alerts-and-communication/do-not-share-info.md`
 - **Emergency equipment**: `guidelines/emergency-preparedness/emergency-equipment.md`
 - **Family emergency plan**: `guidelines/emergency-preparedness/family-emergency-plan.md`
 - **Defensive guidelines**: `guidelines/defensive-policy/defensive-guidelines-1.md`, `defensive-guidelines-2.md`

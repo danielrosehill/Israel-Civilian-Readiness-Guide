@@ -251,7 +251,7 @@ Este es uno de los escenarios más difíciles. Todo en §4.4 existe para hacer q
 - **Mascotas:** muchos refugios no permiten animales — verifique con anticipación
 - Traiga algo para que los niños hagan
 
-## 5.11 OPSEC y Disciplina de Información
+## 5.11 INFOSEC y Disciplina de Información
 
 !!! danger "Advertencia"
     Durante tiempos de guerra, lo que comparte en línea puede poner vidas en peligro — incluyendo la suya.
@@ -272,7 +272,7 @@ Este es uno de los escenarios más difíciles. Todo en §4.4 existe para hacer q
 
 **SÍ:** Use **fuentes oficiales** (app HFC, Portavoz de las IDF, Policía de Israel, medios establecidos). Verifique antes de compartir. Diga a otros que eliminen información sensible de ubicación.
 
-*Incluso compartir con buenas intenciones puede ser OPSEC letal. En caso de duda, no publique.*
+*Incluso compartir con buenas intenciones puede ser INFOSEC letal. En caso de duda, no publique.*
 
 ## 5.12 Directrices Preliminares (Aviso Anticipado)
 
